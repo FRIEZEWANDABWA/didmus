@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved - Didmus Wekesa Barasa Campaign</title>
+    <meta name="description" content="This Movement Needs You. Join our campaign through volunteering, donations, and spreading the word about Bungoma's transformation.">
+    
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#FFD700">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/images/mini_Cropped barasa.jpg" alt="Didmus Barasa Logo" class="logo-img">
+                <span class="logo-text">DIDMUS BARASA</span>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Me</a>
+                <a href="agenda.html" class="nav-link">My Agenda</a>
+                <a href="news.html" class="nav-link">News & Events</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="get-involved.html" class="nav-link active">Get Involved</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="voice-search" id="voiceSearch" aria-label="Voice search">
+                    <i class="fas fa-microphone"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="involvement-hero">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>This Movement Needs You</h1>
+                <p>Join thousands of Bungoma residents who are actively working to engineer our county's future. Every contribution, big or small, makes a difference in building the Bungoma we want.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="volunteer-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Become a Volunteer</h2>
+                <p>Become a part of the grassroots team. From rally coordination to digital outreach, every effort counts.</p>
+            </div>
+            
+            <div class="volunteer-options">
+                <div class="volunteer-card" data-aos="slide-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Rally Coordination</h3>
+                    <p>Help organize and coordinate community rallies, town halls, and public events across Bungoma County.</p>
+                    <ul>
+                        <li>Event planning and logistics</li>
+                        <li>Crowd management</li>
+                        <li>Sound system coordination</li>
+                        <li>Venue arrangements</li>
+                    </ul>
+                </div>
+                
+                <div class="volunteer-card" data-aos="slide-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>Digital Outreach</h3>
+                    <p>Spread our message through social media, online campaigns, and digital community engagement.</p>
+                    <ul>
+                        <li>Social media management</li>
+                        <li>Content creation</li>
+                        <li>Online community building</li>
+                        <li>Digital campaign strategies</li>
+                    </ul>
+                </div>
+                
+                <div class="volunteer-card" data-aos="slide-up" data-aos-delay="300">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community Mobilization</h3>
+                    <p>Engage with local communities, organize grassroots support, and build networks of supporters.</p>
+                    <ul>
+                        <li>Door-to-door campaigns</li>
+                        <li>Community meetings</li>
+                        <li>Voter registration drives</li>
+                        <li>Local network building</li>
+                    </ul>
+                </div>
+                
+                <div class="volunteer-card" data-aos="slide-up" data-aos-delay="400">
+                    <div class="card-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Skills-Based Volunteering</h3>
+                    <p>Use your professional skills to support the campaign in areas like design, technology, and communications.</p>
+                    <ul>
+                        <li>Graphic design</li>
+                        <li>Web development</li>
+                        <li>Photography/videography</li>
+                        <li>Professional consulting</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="volunteer-form-section" data-aos="fade-up">
+                <h3>Sign Up to Volunteer</h3>
+                <form class="volunteer-form" netlify name="volunteer">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="volunteer-name">Full Name</label>
+                            <input type="text" id="volunteer-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="volunteer-phone">Phone Number</label>
+                            <input type="tel" id="volunteer-phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="volunteer-email">Email Address</label>
+                            <input type="email" id="volunteer-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="volunteer-location">Location/Ward</label>
+                            <input type="text" id="volunteer-location" name="location" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="volunteer-interests">Areas of Interest</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="interests" value="rally"> Rally Coordination</label>
+                            <label><input type="checkbox" name="interests" value="digital"> Digital Outreach</label>
+                            <label><input type="checkbox" name="interests" value="community"> Community Mobilization</label>
+                            <label><input type="checkbox" name="interests" value="skills"> Skills-Based Volunteering</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="volunteer-availability">Availability</label>
+                        <select id="volunteer-availability" name="availability" required>
+                            <option value="">Select your availability</option>
+                            <option value="weekends">Weekends only</option>
+                            <option value="evenings">Evenings after work</option>
+                            <option value="flexible">Flexible schedule</option>
+                            <option value="full-time">Full-time volunteer</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-hand-paper"></i>
+                        Join the Movement
+                    </button>
+                </form>
+                <div class="whatsapp-integration">
+                    <p>Prefer WhatsApp? <a href="https://wa.me/254700000000?text=I%20want%20to%20volunteer%20for%20Didmus%20Barasa%20campaign" class="whatsapp-link">
+                        <i class="fab fa-whatsapp"></i> Join our WhatsApp group
+                    </a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="donate-section" id="donate">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Fuel the Campaign</h2>
+                <p>Fuel the campaign with your contribution. Together, we can deliver change.</p>
+            </div>
+            
+            <div class="donation-content">
+                <div class="donation-info" data-aos="fade-right">
+                    <h3>Your Contribution Makes a Difference</h3>
+                    <p>Every donation helps us reach more communities, organize more events, and spread our message of transformation across Bungoma County.</p>
+                    
+                    <div class="donation-uses">
+                        <div class="use-item">
+                            <i class="fas fa-bullhorn"></i>
+                            <span>Community rallies and town halls</span>
+                        </div>
+                        <div class="use-item">
+                            <i class="fas fa-print"></i>
+                            <span>Campaign materials and manifestos</span>
+                        </div>
+                        <div class="use-item">
+                            <i class="fas fa-broadcast-tower"></i>
+                            <span>Digital campaigns and advertisements</span>
+                        </div>
+                        <div class="use-item">
+                            <i class="fas fa-users"></i>
+                            <span>Grassroots mobilization efforts</span>
+                        </div>
+                        <div class="use-item">
+                            <i class="fas fa-research"></i>
+                            <span>Policy research and development</span>
+                        </div>
+                    </div>
+                    
+                    <div class="compliance-note">
+                        <p><i class="fas fa-info-circle"></i> All donations are handled in full compliance with IEBC campaign financing regulations.</p>
+                    </div>
+                </div>
+                
+                <div class="donation-form" data-aos="fade-left">
+                    <h3>Make a Contribution</h3>
+                    <form class="donate-form" netlify name="donation">
+                        <div class="amount-selection">
+                            <label>Select Amount (KES)</label>
+                            <div class="amount-buttons">
+                                <button type="button" class="amount-btn" data-amount="500">500</button>
+                                <button type="button" class="amount-btn" data-amount="1000">1,000</button>
+                                <button type="button" class="amount-btn" data-amount="2500">2,500</button>
+                                <button type="button" class="amount-btn" data-amount="5000">5,000</button>
+                            </div>
+                            <input type="number" id="custom-amount" name="amount" placeholder="Enter custom amount" min="100">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="donor-name">Full Name</label>
+                            <input type="text" id="donor-name" name="donor_name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="donor-phone">Phone Number</label>
+                            <input type="tel" id="donor-phone" name="donor_phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="donor-email">Email Address</label>
+                            <input type="email" id="donor-email" name="donor_email" required>
+                        </div>
+                        
+                        <div class="payment-methods">
+                            <label>Payment Method</label>
+                            <div class="method-buttons">
+                                <button type="button" class="method-btn active" data-method="mpesa">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    M-Pesa
+                                </button>
+                                <button type="button" class="method-btn" data-method="bank">
+                                    <i class="fas fa-university"></i>
+                                    Bank Transfer
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-secondary">
+                            <i class="fas fa-heart"></i>
+                            Contribute Now
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="spread-word-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Spread the Word</h2>
+                <p>Share our message on social media, with friends, and in your community.</p>
+            </div>
+            
+            <div class="sharing-options" data-aos="zoom-in">
+                <h3>Share on Social Media</h3>
+                <div class="share-buttons">
+                    <a href="https://wa.me/?text=Join%20Didmus%20Barasa%20in%20Engineering%20Bungoma's%20Future!%20Visit%20https://didmusbarasa.com" class="share-btn whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://didmusbarasa.com" class="share-btn facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://twitter.com/intent/tweet?text=Engineering%20Bungoma's%20Future%20with%20Didmus%20Barasa&url=https://didmusbarasa.com" class="share-btn twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://didmusbarasa.com" class="share-btn linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+                
+                <div class="copy-link">
+                    <h4>Copy Campaign Link</h4>
+                    <div class="link-copy-group">
+                        <input type="text" value="https://didmusbarasa.com" id="campaign-link" readonly>
+                        <button class="btn btn-outline" onclick="copyLink()">
+                            <i class="fas fa-copy"></i>
+                            Copy
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Join the Movement Today</h2>
+                <p>Together, we can engineer Bungoma's future. Your participation is essential to making our vision a reality.</p>
+                <div class="cta-actions">
+                    <a href="#volunteer-form-section" class="btn btn-primary">
+                        <i class="fas fa-users"></i>
+                        Volunteer Now
+                    </a>
+                    <a href="#donate" class="btn btn-secondary">
+                        <i class="fas fa-heart"></i>
+                        Contribute
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="ai-chat" id="aiChat">
+        <div class="chat-toggle" id="chatToggle">
+            <i class="fas fa-comments"></i>
+            <span class="chat-badge" id="chatBadge">Ask Didmus</span>
+        </div>
+        
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <div class="chat-avatar">
+                    <img src="assets/images/barasa-500x751.jpeg" alt="Didmus Barasa">
+                </div>
+                <div class="chat-info">
+                    <h4>Ask Didmus</h4>
+                    <span class="chat-status">Online</span>
+                </div>
+                <button class="chat-close" id="chatClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="message-avatar">
+                        <img src="assets/images/barasa-500x751.jpeg" alt="Didmus">
+                    </div>
+                    <div class="message-content">
+                        <p>Hello! I'm excited you want to get involved. Ask me about volunteering opportunities, how to contribute, or ways to support our movement.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-input">
+                <div class="input-group">
+                    <input type="text" placeholder="Ask about getting involved..." id="chatInput">
+                    <button class="voice-input" id="voiceInput">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                    <button class="send-message" id="sendMessage">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="quick-questions">
+                    <button class="quick-question" data-question="How can I volunteer?">Volunteer Info</button>
+                    <button class="quick-question" data-question="How do I donate?">Donation Process</button>
+                    <button class="quick-question" data-question="How can I spread the word?">Share Campaign</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/images/mini_Cropped barasa.jpg" alt="Didmus Barasa">
+                        <h3>DIDMUS BARASA</h3>
+                        <p>Engineering Bungoma's Future</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link youtube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="agenda.html">My Agenda</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Get Involved</h4>
+                    <ul class="footer-links">
+                        <li><a href="get-involved.html">Volunteer</a></li>
+                        <li><a href="get-involved.html#donate">Donate</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +254 700 000 000</p>
+                        <p><i class="fas fa-envelope"></i> info@didmusbarasa.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Kimilili, Bungoma County</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Didmus Wekesa Barasa Campaign. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="accessibility.html">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/ai-chat.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/get-involved.js"></script>
+</body>
+</html>
