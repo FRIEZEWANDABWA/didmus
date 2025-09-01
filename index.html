@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Didmus Wekesa Barasa - Governor Bungoma County 2027</title>
+    <meta name="description" content="Engineering Bungoma's Future. Join Didmus Wekesa Barasa's campaign for Governor of Bungoma County. Service. Integrity. Transformation.">
+    <meta name="keywords" content="Didmus Barasa, Bungoma Governor, Kenya Politics, Bungoma County, 2027 Elections">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Didmus Wekesa Barasa - Governor Bungoma County 2027">
+    <meta property="og:description" content="Engineering Bungoma's Future. Service. Integrity. Transformation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://didmusbarasa.com">
+    <meta property="og:image" content="assets/images/didmus-og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#FFD700">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Didmus Wekesa Barasa",
+        "jobTitle": "Gubernatorial Candidate",
+        "description": "Aspiring Governor of Bungoma County, Kenya",
+        "url": "https://didmusbarasa.com",
+        "sameAs": [
+            "https://twitter.com/didmusbarasa",
+            "https://facebook.com/didmusbarasa",
+            "https://instagram.com/didmusbarasa"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/images/mini_Cropped barasa.jpg" alt="Didmus Barasa Logo" class="logo-img">
+                <span class="logo-text">DIDMUS BARASA</span>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About Me</a>
+                <a href="agenda.html" class="nav-link">My Agenda</a>
+                <a href="news.html" class="nav-link">News & Events</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="get-involved.html" class="nav-link">Get Involved</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="voice-search" id="voiceSearch" aria-label="Voice search">
+                    <i class="fas fa-microphone"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <video autoplay muted loop class="hero-video">
+                <!-- <source src="assets/videos/bungoma-landscape.mp4" type="video/mp4"> -->
+            </video>
+            <div class="hero-overlay"></div>
+            <canvas id="particleCanvas" class="particle-canvas"></canvas>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="hero-title">
+                    <span class="title-main">Engineering Bungoma's Future</span>
+                    <span class="title-sub">Service. Integrity. Transformation.</span>
+                </h1>
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                    Join me in building a prosperous, inclusive, and digitally-empowered Bungoma County. 
+                    Together, we'll transform our communities through innovative leadership and unwavering commitment to the people.
+                </p>
+                <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
+                    <a href="agenda.html" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        View My Agenda
+                    </a>
+                    <a href="get-involved.html" class="btn btn-secondary">
+                        <i class="fas fa-users"></i>
+                        Join the Movement
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="7">0</div>
+                    <div class="stat-label">Years in Parliament</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="100000">0</div>
+                    <div class="stat-label">Lives Impacted</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator" data-aos="fade-in" data-aos-delay="1000">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+    
+    <!-- Quick Links Section -->
+    <section class="quick-links" id="quickLinks">
+        <div class="container">
+            <div class="quick-links-grid">
+                <div class="quick-link-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Agriculture & Food Security</h3>
+                    <p>Transforming farming through modern technology and market linkages</p>
+                    <a href="agenda.html#agriculture" class="card-link">Learn More</a>
+                </div>
+                
+                <div class="quick-link-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Youth Empowerment</h3>
+                    <p>Creating opportunities through tech hubs and vocational training</p>
+                    <a href="agenda.html#youth" class="card-link">Learn More</a>
+                </div>
+                
+                <div class="quick-link-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Healthcare Access</h3>
+                    <p>Quality healthcare for all through improved facilities and digital systems</p>
+                    <a href="agenda.html#healthcare" class="card-link">Learn More</a>
+                </div>
+                
+                <div class="quick-link-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="card-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>Infrastructure</h3>
+                    <p>Modern roads, reliable power, and digital connectivity for all</p>
+                    <a href="agenda.html#infrastructure" class="card-link">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Latest News Section -->
+    <section class="latest-news" id="latestNews">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Latest Updates</h2>
+                <p>Stay informed about campaign activities and community engagements</p>
+            </div>
+            
+            <div class="news-grid">
+                <article class="news-card featured" data-aos="fade-right">
+                    <div class="news-image">
+                        <img src="assets/images/Didmus-ICAO-visit.jpg" alt="Community Rally" loading="lazy">
+                        <div class="news-category">Rally</div>
+                    </div>
+                    <div class="news-content">
+                        <time class="news-date">December 15, 2024</time>
+                        <h3>Massive Turnout at Kimilili Community Rally</h3>
+                        <p>Thousands gather to discuss development agenda and future plans for Bungoma County...</p>
+                        <a href="news.html#rally-kimilili" class="read-more">Read More</a>
+                    </div>
+                </article>
+                
+                <article class="news-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="news-image">
+                        <img src="assets/images/GaQSVWjWgAAOA2W.jpg" alt="Youth Program Launch" loading="lazy">
+                        <div class="news-category">Youth</div>
+                    </div>
+                    <div class="news-content">
+                        <time class="news-date">December 12, 2024</time>
+                        <h3>Tech Hub Initiative Launched</h3>
+                        <p>New digital skills program empowers young entrepreneurs...</p>
+                        <a href="news.html#tech-hub-launch" class="read-more">Read More</a>
+                    </div>
+                </article>
+                
+                <article class="news-card" data-aos="fade-left" data-aos-delay="200">
+                    <div class="news-image">
+                        <img src="assets/images/Didmus-Barasa-Finance-Bill.jpg" alt="Agricultural Project" loading="lazy">
+                        <div class="news-category">Agriculture</div>
+                    </div>
+                    <div class="news-content">
+                        <time class="news-date">December 10, 2024</time>
+                        <h3>Farmers Receive Modern Equipment</h3>
+                        <p>Supporting agricultural transformation with technology...</p>
+                        <a href="news.html#farmers-equipment" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="news-actions" data-aos="fade-up" data-aos-delay="300">
+                <a href="news.html" class="btn btn-outline">View All News</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter Section -->
+    <section class="newsletter" id="newsletter">
+        <div class="container">
+            <div class="newsletter-content" data-aos="fade-up">
+                <div class="newsletter-text">
+                    <h2>Stay Connected</h2>
+                    <p>Get the latest updates on campaign activities, policy announcements, and community events. Join thousands of supporters already in the loop.</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Subscribe
+                        </button>
+                    </div>
+                    <div class="form-incentive">
+                        <i class="fas fa-gift"></i>
+                        <span>Get a free digital copy of our manifesto!</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- AI Chat Assistant -->
+    <div class="ai-chat" id="aiChat">
+        <div class="chat-toggle" id="chatToggle">
+            <i class="fas fa-comments"></i>
+            <span class="chat-badge" id="chatBadge">Ask Didmus</span>
+        </div>
+        
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <div class="chat-avatar">
+                    <img src="assets/images/barasa-500x751.jpeg" alt="Didmus Barasa">
+                </div>
+                <div class="chat-info">
+                    <h4>Ask Didmus</h4>
+                    <span class="chat-status">Online</span>
+                </div>
+                <button class="chat-close" id="chatClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="message-avatar">
+                        <img src="assets/images/barasa-500x751.jpeg" alt="Didmus">
+                    </div>
+                    <div class="message-content">
+                        <p>Hello! I'm here to help you learn about my vision for Bungoma County. Ask me anything about my policies, background, or how to get involved!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-input">
+                <div class="input-group">
+                    <input type="text" placeholder="Type your message..." id="chatInput">
+                    <button class="voice-input" id="voiceInput">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                    <button class="send-message" id="sendMessage">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="quick-questions">
+                    <button class="quick-question" data-question="What is your vision for Bungoma?">Vision for Bungoma</button>
+                    <button class="quick-question" data-question="How can I volunteer?">How to Volunteer</button>
+                    <button class="quick-question" data-question="What are your key policies?">Key Policies</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/images/mini_Cropped barasa.jpg" alt="Didmus Barasa">
+                        <h3>DIDMUS BARASA</h3>
+                        <p>Engineering Bungoma's Future</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link twitter" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link instagram" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link youtube" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link whatsapp" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="agenda.html">My Agenda</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Get Involved</h4>
+                    <ul class="footer-links">
+                        <li><a href="get-involved.html">Volunteer</a></li>
+                        <li><a href="get-involved.html#donate">Donate</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#newsletter">Newsletter</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +254 700 000 000</p>
+                        <p><i class="fas fa-envelope"></i> info@didmusbarasa.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Kimilili, Bungoma County</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Didmus Wekesa Barasa Campaign. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="accessibility.html">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/ai-chat.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => console.log('SW registered'))
+                    .catch(error => console.log('SW registration failed'));
+            });
+        }
+    </script>
+</body>
+</html>

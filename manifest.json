@@ -1,0 +1,139 @@
+{
+  "name": "Didmus Wekesa Barasa - Governor Bungoma County 2027",
+  "short_name": "Didmus Barasa",
+  "description": "Engineering Bungoma's Future. Join Didmus Wekesa Barasa's campaign for Governor of Bungoma County. Service. Integrity. Transformation.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A192F",
+  "theme_color": "#FFD700",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "categories": ["politics", "government", "news"],
+  "icons": [
+    {
+      "src": "assets/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/images/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Didmus Barasa Campaign Website - Desktop View"
+    },
+    {
+      "src": "assets/images/screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Didmus Barasa Campaign Website - Mobile View"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "My Agenda",
+      "short_name": "Agenda",
+      "description": "View Didmus Barasa's policy agenda and manifesto",
+      "url": "/agenda.html",
+      "icons": [
+        {
+          "src": "assets/icons/agenda-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Latest News",
+      "short_name": "News",
+      "description": "Stay updated with campaign news and events",
+      "url": "/news.html",
+      "icons": [
+        {
+          "src": "assets/icons/news-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Get Involved",
+      "short_name": "Join Us",
+      "description": "Volunteer or support the campaign",
+      "url": "/get-involved.html",
+      "icons": [
+        {
+          "src": "assets/icons/volunteer-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Get in touch with the campaign team",
+      "url": "/contact.html",
+      "icons": [
+        {
+          "src": "assets/icons/contact-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://didmusbarasa.com/manifest.json"
+    }
+  ],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
+}
