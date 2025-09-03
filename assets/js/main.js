@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeProgressBar();
     initializeLazyLoading();
     initializeParticles();
+    initializeMobileFeatures();
+    initializeAutoChatPopup();
 });
 
 // ===== THEME MANAGEMENT =====
@@ -50,10 +52,11 @@ function toggleTheme() {
 
 function updateThemeIcon() {
     const themeToggle = document.getElementById('themeToggle');
-    const icon = themeToggle?.querySelector('i');
     
-    if (icon) {
-        icon.className = currentTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+    if (themeToggle) {
+        themeToggle.innerHTML = currentTheme === 'dark' 
+            ? '<i class="fas fa-sun"></i><span class="theme-label">Light</span>' 
+            : '<i class="fas fa-moon"></i><span class="theme-label">Dark</span>';
     }
 }
 
@@ -77,12 +80,19 @@ function initializeNavigation() {
     navToggle?.addEventListener('click', () => {
         navMenu?.classList.toggle('active');
         navToggle.classList.toggle('active');
+        document.body.style.overflow = navMenu?.classList.contains('active') ? 'hidden' : 'auto';
     });
     
-    // Smooth scrolling for anchor links
+    // Close mobile menu when clicking on links
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             const href = link.getAttribute('href');
+            
+            // Close mobile menu
+            navMenu?.classList.remove('active');
+            navToggle?.classList.remove('active');
+            document.body.style.overflow = 'auto';
+            
             if (href.startsWith('#')) {
                 e.preventDefault();
                 const target = document.querySelector(href);
@@ -94,6 +104,15 @@ function initializeNavigation() {
                 }
             }
         });
+    });
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!navbar?.contains(e.target) && navMenu?.classList.contains('active')) {
+            navMenu.classList.remove('active');
+            navToggle?.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
     });
     
     // Active link highlighting
@@ -584,6 +603,82 @@ document.addEventListener('click', (e) => {
 
 // ===== INITIALIZATION COMPLETE =====
 console.log('Didmus Barasa Campaign Website - JavaScript Initialized Successfully');
+
+// ===== MOBILE FEATURES =====
+function initializeMobileFeatures() {
+    // Prevent zoom on input focus (iOS)
+    const inputs = document.querySelectorAll('input, select, textarea');
+    inputs.forEach(input => {
+        input.addEventListener('focus', () => {
+            if (window.innerWidth < 768) {
+                const viewport = document.querySelector('meta[name=viewport]');
+                viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+            }
+        });
+        
+        input.addEventListener('blur', () => {
+            if (window.innerWidth < 768) {
+                const viewport = document.querySelector('meta[name=viewport]');
+                viewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
+            }
+        });
+    });
+    
+    // Improve touch scrolling
+    document.body.style.webkitOverflowScrolling = 'touch';
+    
+    // Add touch feedback to buttons
+    const buttons = document.querySelectorAll('.btn, .nav-link, .filter-btn');
+    buttons.forEach(button => {
+        button.addEventListener('touchstart', () => {
+            button.style.transform = 'scale(0.95)';
+        });
+        
+        button.addEventListener('touchend', () => {
+            setTimeout(() => {
+                button.style.transform = 'scale(1)';
+            }, 100);
+        });
+    });
+}
+
+// ===== AUTO CHAT POPUP =====
+function initializeAutoChatPopup() {
+    const chatWindow = document.getElementById('chatWindow');
+    const chatToggle = document.getElementById('chatToggle');
+    
+    // Auto-popup chat after 4 seconds on first visit
+    if (!localStorage.getItem('chatShown')) {
+        setTimeout(() => {
+            if (chatWindow && !chatWindow.classList.contains('active')) {
+                chatWindow.classList.add('auto-show', 'active');
+                
+                // Auto-minimize after 4 seconds
+                setTimeout(() => {
+                    chatWindow.classList.remove('auto-show', 'active');
+                    localStorage.setItem('chatShown', 'true');
+                }, 4000);
+            }
+        }, 4000);
+    }
+    
+    // Enhanced chat toggle for mobile
+    chatToggle?.addEventListener('click', () => {
+        const isActive = chatWindow?.classList.contains('active');
+        
+        if (isActive) {
+            chatWindow.classList.remove('active');
+        } else {
+            chatWindow?.classList.add('active');
+            
+            // Focus on input for better mobile experience
+            setTimeout(() => {
+                const chatInput = document.getElementById('chatInput');
+                chatInput?.focus();
+            }, 300);
+        }
+    });
+}
 
 // Export functions for use in other modules
 window.DidmusWebsite = {
