@@ -111,7 +111,7 @@ function initializeNavigation() {
             navToggle?.classList.remove('active');
             document.body.style.overflow = 'auto';
             
-            // Handle anchor links on same page
+            // Only prevent default for anchor links on same page
             if (href.startsWith('#')) {
                 e.preventDefault();
                 const target = document.querySelector(href);
@@ -122,7 +122,7 @@ function initializeNavigation() {
                     });
                 }
             }
-            // For other pages, let the default behavior happen
+            // For .html pages, allow normal navigation (don't prevent default)
         });
     });
     
